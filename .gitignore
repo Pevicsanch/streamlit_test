@@ -1,39 +1,24 @@
-# Ignore virtual environment
+# Virtual environment
 .venv/
 
-# Ignore Python cache files
+# Python cache and compiled files
 __pycache__/
 *.py[cod]
-*.egg-info/
-*.egg
 
-# Ignore logs and lock files
-*.log
-*.lock
-*.db
-
-# Ignore environment variables
+# Environment files
 .env
 
-# Ignore Streamlit configuration
+# Streamlit
 .streamlit/
 
-# Ignore Jupyter Notebook checkpoints (in case you use notebooks)
-.ipynb_checkpoints/
-
-# Logs, lock files, and databases
-*.log
-*.lock
-*.db
-
-# Environment variables
-.env
-
-# Streamlit config
-.streamlit/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# VSCode settings
+# VSCode editor config
 .vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
