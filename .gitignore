@@ -1,24 +1,17 @@
 # Virtual environment
 .venv/
-
 # Python cache and compiled files
-__pycache__/
+**pycache**/
 *.py[cod]
-
 # Environment files
 .env
-
 # Streamlit
-.streamlit/
-
+.streamlit/secrets.toml
 # VSCode editor config
 .vscode/
-
 # Jupyter
 .ipynb_checkpoints/
-
 # macOS
 .DS_Store
-
 # Logs
 *.log

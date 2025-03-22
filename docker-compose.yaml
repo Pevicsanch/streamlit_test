@@ -1,0 +1,23 @@
+services:
+  frontend_app:
+    image: streamlit_test_app:latest
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env.docker
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./src:/src/src
+      - ./pyproject.toml:/src/pyproject.toml
+      - ./uv.lock:/src/uv.lock
+      - ./.streamlit:/src/.streamlit
+    command:
+      [
+        "uv", "run", "streamlit", "run", "src/app/frontend/app.py",
+        "--server.port=8501",
+        "--server.address=0.0.0.0",
+        "--server.runOnSave=true"
+      ]
